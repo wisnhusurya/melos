@@ -24,7 +24,7 @@ dependencies:
   file: ^6.1.0
   glob: ^2.1.0
   graphs: ^2.1.0
-  http: ^0.13.1
+  http: ">=0.13.1 <2.0.0"
   meta: ^1.1.8
   mustache_template: ^2.0.0
   path: ^1.7.0
@@ -32,7 +32,10 @@ dependencies:
   pool: ^1.4.0
   prompts: ^2.0.0
   pub_semver: ^2.0.0
-  pub_updater: ^0.2.2
+  pub_updater:
+    git:
+      url: https://github.com/ndelanou/pub_updater.git
+      ref: bump_http
   pubspec: ^2.1.0
   string_scanner: ^1.0.5
   yaml: ^3.1.0
